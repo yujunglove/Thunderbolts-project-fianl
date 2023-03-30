@@ -28,7 +28,7 @@ spring:
       max-file-size: 10MB
       max-request-size: 10MB
       location: C:\Users\리온\git\thunderbolts
-  
+   
       
 #image upload directory F:/sub_project
 image:
