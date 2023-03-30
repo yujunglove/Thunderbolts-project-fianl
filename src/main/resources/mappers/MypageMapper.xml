@@ -99,7 +99,7 @@
 		<result property="buyingOrderCode" column="BUYING_ORDER_CODE"/>
 	</resultMap>
 	
-	<!-- 내정보관리 memberDTO -->
+	<!-- 내정보관리 memberDTO  --> 
 	<resultMap id="membersResultMap" type="com.greedy.thunderbolts.model.dto.MembersDTO">
 		<id property="membersNo" column="MEMBERS_NO"/>
 		<result property="membersName" column="MEMBERS_NAME"/>
@@ -134,7 +134,7 @@
 	    <result property="addressesAdds" column="ADDRESSES_ADDS" />
 	</resultMap>
 	
-	<!-- 계좌 -->
+	<!-- 계좌  -->
 	<resultMap id="membersAccountsMap" type="com.greedy.thunderbolts.model.dto.MembersAccountsDTO">
 	    <id property="accountNo" column="ACCOUNT_NO"/>
 	    <result property="accountBank" column="ACCOUNT_BANK"/>
