@@ -136,7 +136,7 @@ window.oninput = function() {
 if (document.getElementById("searchIdbutton")) {
 	const $searchIdbutton = document.getElementById("searchIdbutton");
 	$searchIdbutton.onclick = function() {
-		/* 유효성 검사하는것이 좋다. */
+	
 		let MembersTel = document.getElementById("loginPhone").value;
 		console.log(MembersTel);
 		fetch("/login/searchId", {

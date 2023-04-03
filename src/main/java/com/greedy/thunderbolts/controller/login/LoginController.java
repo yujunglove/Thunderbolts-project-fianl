@@ -120,9 +120,6 @@ public class LoginController {
 		}
 		
 		
-		 
-		// ResponseEntity의 body를 String으로 선언하여 result라는 String을 반환한다.
-		// Ok라는 상태코드 (200)을 반환 한다 (result)와 함께 - alert하기 위해서 반환 js파일쪽으로
 		return ResponseEntity.ok(result);
 		
 	}

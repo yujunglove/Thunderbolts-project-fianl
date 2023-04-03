@@ -422,42 +422,18 @@
             </div>
             <div class="maintitle name">🥇Best 랭킹</div>
             <div class="rank">
-            	<div class="toprank">
-                    <div class="rankimg img1"></div>
-                    <div class="prankimg pimg" style="background-image: url(/upload/image/main/rank/rank1.png)"></div>
-                    <div class="ranktxt">TOP 1</div>
-                    <div class="rankbrand">Stussy</div>
-                    <div class="rankpname">Stussy Basic Stussy LS T-Shirt Black 2022</div>
+            	
+            	<div class="toprank" th:each="bestProductList,i : ${ bestProductList }">
+            		<div th:data-product-no=${bestProductList.productCode} class="productCode">
+	                    <div class="rankimg" th:classappend="'img'+${i.count}"></div>
+	                    <div class="prankimg" th:style="'background-image:url(' + ${ bestProductList.attachmentFile[0].filePath }+${ bestProductList.attachmentFile[0].fileDecoded } + ');'"></div>
+	                    <div class="ranktxt" th:text="'TOP '+ ${i.count}"></div>
+	                    <div class="rankbrand" th:text="${ bestProductList.brandNo.brandName }"></div>
+	                    <div class="rankpname" th:text="${ bestProductList.productName }"></div>
+                    </div>
                 </div>
         
-                <div class="toprank">
-                    <div class="rankimg img2"></div>
-                    <div class="prankimg" style="background-image: url(/upload/image/main/rank/rank2.png)"></div>
-                    <div class="ranktxt">TOP 2</div>
-                    <div class="rankbrand">Nike</div>
-                    <div class="rankpname">Nike x Off-White NRG Jersey Imperial Blue - Asia</div>
-                </div>
-                <div class="toprank">
-                    <div class="rankimg img3"></div>
-                    <div class="prankimg" style="background-image: url(/upload/image/main/rank/rank3.png)"></div>
-                    <div class="ranktxt">TOP 3</div>
-                    <div class="rankbrand">Stussy</div>
-                    <div class="rankpname">Stussy World Tour LS T-Shirt White</div>
-                </div>
-                <div class="toprank">
-                    <div class="rankimg img4"></div>
-                    <div class="prankimg" style="background-image: url(/upload/image/main/rank/rank4.png)"></div>
-                    <div class="ranktxt">TOP 4</div>
-                    <div class="rankbrand">Wooyoungmi</div>
-                    <div class="rankpname">Wooyoungmi Cotton Long Sleeve Back Logo T-Shirt Black - 22FW</div>
-                </div>
-                <div class="toprank">
-                    <div class="rankimg img5"></div>
-                    <div class="prankimg" style="background-image: url(/upload/image/main/rank/rank5.png)"></div>
-                    <div class="ranktxt">TOP 5</div>
-                    <div class="rankbrand">Wooyoungmi</div>
-                    <div class="rankpname">Wooyoungmi Cotton Long Sleeve Back Logo T-Shirt White - 22FW</div>
-                </div>
+                
             </div>
             <div class="maintitle name">오늘의 핫딜</div>
                 <div class="todayproduct">
@@ -467,9 +443,9 @@
                             <i class="eheart"></i>
                         </div>
                     	 <div class="itemtxt" >
-                            <div class="brandname"></div>
-                            <div class="pname"></div>
-                     		<div class="price"></div>
+                            <div class="brandname">adidas</div>
+                            <div class="pname">adds</div>
+                     		<div class="price">123,00</div>
                         </div>
                     </div>
                     <div class="todaypro item2">

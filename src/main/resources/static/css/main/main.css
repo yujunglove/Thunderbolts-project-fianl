@@ -1210,14 +1210,14 @@ main{
 
 .rankimg{
     top:5%;
-    right: 25%;
+    right: 12%;
     position:absolute;
     width: 100%;
     height: 70%;
 }
 .prankimg{
     top:10%;
-    left: 20%;
+    left: 35%;
     position:absolute;
     width: 78%;
     height: 70%;  
@@ -1238,22 +1238,28 @@ main{
     
 }
 .rankbrand{
-    font-size: 100%;
+	width: 100%;
+    font-size: 25px;
     font-weight: bold;
     text-align: right;
-    top: 75%;
+    top: 77%;
     left: 98%;
     position:absolute;
-    transform: translate(-98%, -75%); 
+    transform: translate(-98%, -77%); 
 
 
 }
 .rankpname{
-    font-size: 1%;
-    text-align: left;
+	color: rgba(0, 0, 0, 0.7);
+	word-wrap:break-word;
+	word-break: keep-all;
+	width:90%;
+    font-size: 16px;
+    text-align: right;
     top: 82%;
-    left: 18%;
+    left: 12%;
     position:absolute;    
+    
 }
 
 .rankimg.img1{

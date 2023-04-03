@@ -97,7 +97,7 @@ public class MemberService {
 				pwdEmail.setMembersId(members.getMembersId());
 				pwdEmail.setMembersPwd(newPass);
 
-				mailSend(pwdEmail);
+				mailSend(pwdEmail);	
 			} else { members = null;}
 
 		}

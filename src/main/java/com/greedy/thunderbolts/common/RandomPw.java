@@ -20,7 +20,7 @@ public class RandomPw {
 		String randomPw = "";
 		boolean hasLower = false, hasUpper = false, hasNumber = false, hasSign = false;
 
-		if (!(hasLower && hasUpper && hasNumber && hasSign)) {
+		
 			for (int i = 0; i < 16; i++) {
 				int index = rand.nextInt(4);
 				switch (index) {
@@ -50,38 +50,41 @@ public class RandomPw {
 					break;
 
 				}
+			}
+			if (!(hasLower && hasUpper && hasNumber && hasSign)) {
 
-			}
-		}
-		StringBuilder sb = new StringBuilder(randomPw);
+				StringBuilder sb = new StringBuilder(randomPw);
 
-		for (int i = 0; i < 16; i++) {
-			for (int j = 0; j < charLower.length; j++) {
-				if (randomPw.charAt(i) == charLower[j].charAt(0)) {
-					sb.setCharAt(rand.nextInt(randomPw.length()), charLower[rand.nextInt(charLower.length)].charAt(0));
-					randomPw = sb.toString();
+				for (int i = 0; i < 16; i++) {
+					for (int j = 0; j < charLower.length; j++) {
+						if (randomPw.charAt(i) == charLower[j].charAt(0)) {
+							sb.setCharAt(rand.nextInt(randomPw.length()),
+									charLower[rand.nextInt(charLower.length)].charAt(0));
+							randomPw = sb.toString();
+						}
+					}
+					for (int j = 0; j < charUpper.length; j++) {
+						if (randomPw.charAt(i) == charUpper[j].charAt(0)) {
+							sb.setCharAt(rand.nextInt(randomPw.length()),
+									charUpper[rand.nextInt(charUpper.length)].charAt(0));
+							randomPw = sb.toString();
+						}
+					}
+					for (int j = 0; j < number.length; j++) {
+						if (randomPw.charAt(i) == number[j].charAt(0)) {
+							sb.setCharAt(rand.nextInt(randomPw.length()),
+									number[rand.nextInt(number.length)].charAt(0));
+							randomPw = sb.toString();
+						}
+					}
+					for (int j = 0; j < sign.length; j++) {
+						if (randomPw.charAt(i) == sign[j].charAt(0)) {
+							sb.setCharAt(rand.nextInt(randomPw.length()), sign[rand.nextInt(sign.length)].charAt(0));
+							randomPw = sb.toString();
+						}
+					}
 				}
 			}
-			for (int j = 0; j < charUpper.length; j++) {
-				if (randomPw.charAt(i) == charUpper[j].charAt(0)) {
-					sb.setCharAt(rand.nextInt(randomPw.length()), charUpper[rand.nextInt(charUpper.length)].charAt(0));
-					randomPw = sb.toString();
-				}
-			}
-			for (int j = 0; j < number.length; j++) {
-				if (randomPw.charAt(i) == number[j].charAt(0)) {
-					sb.setCharAt(rand.nextInt(randomPw.length()), number[rand.nextInt(number.length)].charAt(0));
-					randomPw = sb.toString();
-				}
-			}
-			for (int j = 0; j < sign.length; j++) {
-				if (randomPw.charAt(i) == sign[j].charAt(0)) {
-					sb.setCharAt(rand.nextInt(randomPw.length()), sign[rand.nextInt(sign.length)].charAt(0));
-					randomPw = sb.toString();
-				}
-			}
-		}
-
 		return randomPw;
 
 	}

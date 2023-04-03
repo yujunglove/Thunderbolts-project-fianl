@@ -180,6 +180,7 @@ main{
 }
 
 .buyordername, .saleordername{
+	font-size:20px;
 	font-weight: 600;
 	width: 60px;
 	line-height: 80px;
@@ -196,11 +197,14 @@ main{
 	text-align: left;
 }
 
-
+.buyordermaxprice,.saleordermaxprice{
+	font-size: 22px;
+	margin-top: -8px;
+}
 
 .buyorderpricetxt, .saleorderpricetxt{
-	font-size: 10%;
-	padding-bottom: 10%;
+	font-size: 18px;
+	padding-bottom: 15%;
 }
 
 
