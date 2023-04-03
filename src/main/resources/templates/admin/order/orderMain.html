@@ -16,7 +16,7 @@
 		<ul>
 			<div class="sidebar-menu" id="sidebarcontainer">
 				<li class="sidebartexts" id="main-serv"><a
-					href="http://localhost:8002/admin/orderMainPage"><img
+					href="/admin/home"><img
 						class="sidebaricons" id="truckimg"
 						src="/image/icon/home_icon-icons.com_73532.png">MAIN</a></li>
 				<li class="sidebartexts" id="delivery-serv"><a
@@ -25,22 +25,22 @@
 				<li class="sidebartexts" id="order-serv"><a
 					href="localhost:8002/admin/orderMainPage"><img class="sidebaricons"
 						id="basketimg"
-						src="http://localhost:8002/admin/orderMainPage">주문관리</a></li>
+						 src="/image/icon/basket_icon-icons.com_56201.png">주문관리</a></li>
 				<li class="sidebartexts" id="client-serv"><a
-					href="https://www.naver.com"><img class="sidebaricons"
-						id="personimg" src="http://localhost:8002/admin/productMainPage">회원관리</a></li>
+					href="localhost:8002/admin"><img class="sidebaricons"
+						id="personimg" src="/image/icon/user_84308.png">회원관리</a></li>
 				<li class="sidebartexts" id="product-serv"><a
 					href="http://localhost:8002/admin/productMainPage"><img class="sidebaricons"
 						id="boximg"
 						src="/image/icon/box_cube_d_perspective_shape_icon_142362.png">상품관리</a>
 				</li>
 				<li class="sidebartexts" id="board-serv"><a
-					href="https://www.naver.com"><img class="sidebaricons"
+					href="/admin"><img class="sidebaricons"
 						id="helpimg"
 						src="/image/icon/help-button-speech-bubble-with-question-mark_icon-icons.com_72707.png">게시판관리</a>
 				</li>
 				<li class="sidebartexts" id="logout-serv"><a
-					href="https://www.naver.com"><img class="sidebaricons"
+					href="/"><img class="sidebaricons"
 						id="cancelimg"
 						src="/image/icon/home_icon-icons.com_73532.png">logout</a></li>
 			</div>
@@ -49,7 +49,7 @@
   
     
 
-	<h2>주문정보</h2>
+ <div class="title"><p style="font-size : 65px">주문정보</p></div>
 	<table  id="listArea" style="text-align: center" >
 		<tr>
 			<th style="width : 200px">주문번호</th>
@@ -72,10 +72,8 @@
 	</table>
 
 	<div class="buttonselection">
-        <div class="buttonstosub">
-            <button id="purchase">구매</button>
-            <button id="selling">판매</button>
-        </div>
+     
+      
         <div class="buttonstogo"><button id="checking">정산관리</button></div>
         <div class="buttonstogo"><button id="orders">주문관리</button></div>
     </div>
